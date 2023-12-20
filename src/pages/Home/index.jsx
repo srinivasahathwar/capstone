@@ -14,10 +14,10 @@ const Home = () => {
     <div>
       <Header page="home"/>
       <Slider />
+      <Popular />
       <About />
       <Menu />
       <Reservation />
-      <Popular />
       <MobileApp />
       <Footer />
     </div>
