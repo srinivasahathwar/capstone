@@ -10,7 +10,6 @@
 - [Screenshots](#screenshots)
 - [Technologies](#technologies)
 - [Installation](#installation)
-- [License](#license)
 
 
 ![main-image](./readmeAssets/main-image.jpg)
@@ -69,7 +68,7 @@ In this project, from the beginning with figma wireframe design and figma UI des
 
 - ReactJS
 - HTML
-- CSS &
+- CSS 
 ---
 
 ## Installation
@@ -77,7 +76,3 @@ In this project, from the beginning with figma wireframe design and figma UI des
 - Clone the repository
 - Run `npm install`
 - Run `npm start`
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
