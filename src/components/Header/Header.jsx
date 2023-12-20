@@ -7,11 +7,14 @@ import Cart from "../../assets/icons/cart.svg";
 import Menu from "../../assets/icons/menu.svg";
 import classNames from "classnames";
 import { Modal } from "../Modals/Modal";
+import { useNavigate } from "react-router-dom";
 
-const Header = () => {
+const Header = (props) => {
   const [active, setActive] = useState(false);
+  const { page } = props;
 
   const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
 
   const isActive = (e) => {
     window.scrollY >= 50 ? setActive(true) : setActive(false);
@@ -24,6 +27,10 @@ const Header = () => {
     };
   });
 
+  const menuNavegate = (url) => {
+    navigate(url);
+  };
+
   return (
     <header
       className={classNames({
@@ -33,17 +40,17 @@ const Header = () => {
       {showModal && <Modal showModal={showModal} setShowModal={setShowModal} />}
 
       <div className="container">
-        <div className="logo">
+        <div className="logo" onClick={() => menuNavegate("/")}>
           <img src={DefaultLogo} alt="default-logo" />
         </div>
         <div className="menu">
           <nav>
             <ul>
-              <li>About Us</li>
-              <li>Menu</li>
-              <li>Reviews</li>
-              <li>Blog</li>
-              <li>Contacts</li>
+              <li onClick={() => menuNavegate("/about")} className= {page === 'about' ? 'menuActive' : ''}>About Us</li>
+              <li onClick={() => menuNavegate("/menu")} className= {page === 'menu' ? 'menuActive' : ''}>Menu</li>
+              <li onClick={() => menuNavegate("/reviews")} className= {page === 'reviews' ? 'menuActive' : ''}>Reviews</li>
+              <li onClick={() => menuNavegate("/blog")} className= {page === 'blog' ? 'menuActive' : ''}>Blog</li>
+              <li onClick={() => menuNavegate("/contacts")} className= {page === 'contacts' ? 'menuActive' : ''}>Contacts</li>
             </ul>
           </nav>
           <div className="buttons">
@@ -53,7 +60,10 @@ const Header = () => {
             <button className="button-menu">
               <img src={Menu} alt="" />
             </button>
-            <button className="button-primary" onClick={() => setShowModal(true)}>
+            <button
+              className="button-primary"
+              onClick={() => setShowModal(true)}
+            >
               Reserve Table
             </button>
           </div>

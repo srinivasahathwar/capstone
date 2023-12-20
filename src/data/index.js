@@ -1,19 +1,19 @@
-import item1 from "./assets/images/slider/items/item1.png";
-import item1Sub from "./assets/images/slider/items/item1.1.png";
-import item2 from "./assets/images/slider/items/item2.png";
-import item2Sub from "./assets/images/slider/items/item2.1.png";
-import item3 from "./assets/images/slider/items/item3.png";
-import item3Sub from "./assets/images/slider/items/item3.1.png";
-import item4 from "./assets/images/slider/items/item4.png";
-import item4Sub from "./assets/images/slider/items/item4.1.png";
-import item5 from "./assets/images/slider/items/item5.png";
-import item5Sub from "./assets/images/slider/items/item5.1.png";
+import item1 from "../assets/images/slider/items/item1.png";
+import item1Sub from "../assets/images/slider/items/item1.1.png";
+import item2 from "../assets/images/slider/items/item2.png";
+import item2Sub from "../assets/images/slider/items/item2.1.png";
+import item3 from "../assets/images/slider/items/item3.png";
+import item3Sub from "../assets/images/slider/items/item3.1.png";
+import item4 from "../assets/images/slider/items/item4.png";
+import item4Sub from "../assets/images/slider/items/item4.1.png";
+import item5 from "../assets/images/slider/items/item5.png";
+import item5Sub from "../assets/images/slider/items/item5.1.png";
 
-import pasta from "./assets/images/popular/items/pasta.png";
-import burger from "./assets/images/popular/items/burger.png";
-import chickenShawarma from "./assets/images/popular/items/chicken-shawarma.png";
-import frenchFires from "./assets/images/popular/items/french-fires.png";
-import fish from "./assets/images/popular/items/fish.png";
+import pasta from "../assets/images/popular/items/pasta.png";
+import burger from "../assets/images/popular/items/burger.png";
+import chickenShawarma from "../assets/images/popular/items/chicken-shawarma.png";
+import frenchFires from "../assets/images/popular/items/french-fires.png";
+import fish from "../assets/images/popular/items/fish.png";
 
 export const slider = [
   {

@@ -31,7 +31,10 @@ header {
       align-items: center;
       display: flex;
       gap: 44px;
+      .menuActive {
+        color: $black;
 
+      }
       nav ul {
         display: flex;
         gap: 40px;

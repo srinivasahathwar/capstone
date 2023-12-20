@@ -10,7 +10,7 @@ import star from "../../../assets/icons/star.svg";
 
 import { popular } from "../../../data";
 
-import {responsive } from "./constants"
+import { responsive } from "./constants";
 
 const Popular = () => {
   const [mobileView, setMobileView] = useState(false);
@@ -25,52 +25,54 @@ const Popular = () => {
 
   return (
     <div className="popular">
-      <div className="container">
-        <div className="head">
-          <h2>Popular Dishes</h2>
+      {Carousel ? (
+        <div className="container">
+          <div className="head">
+            <h2>Popular Dishes</h2>
 
-          <div className="navigation">
-            <button className="prev" onClick={() => Carousel?.previous()}>
-              <img src={arrow} alt="prev" />
-            </button>
-            <button className="next" onClick={() => Carousel?.next()}>
-              <img src={arrow} alt="next" />
-            </button>
+            <div className="navigation">
+              <button className="prev" onClick={() => Carousel?.previous()}>
+                <img src={arrow} alt="prev" />
+              </button>
+              <button className="next" onClick={() => Carousel?.next()}>
+                <img src={arrow} alt="next" />
+              </button>
+            </div>
+          </div>
+
+          <div className="items">
+            <Carousel
+              ref={(el) => (Carousel = el)}
+              centerMode={mobileView ? true : false}
+              arrows={false}
+              responsive={responsive}
+            >
+              {popular.map((item) => (
+                <div key={item.id} className="item">
+                  <div className="img">
+                    <img src={item.img} alt="" />
+                  </div>
+                  <div className="info">
+                    <h3>{item.title}</h3>
+                    <div className="stars">
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                    </div>
+                    <p>{item.description}</p>
+                  </div>
+                  <div className="footer">
+                    <span className="price">${item.price}</span>
+                    <button>Add To Cart</button>
+                  </div>
+                </div>
+              ))}
+            </Carousel>
           </div>
         </div>
-
-        <div className="items">
-          <Carousel
-            ref={(el) => (Carousel = el)}
-            centerMode={mobileView ? true : false}
-            arrows={false}
-            responsive={responsive}
-          >
-            {popular.map((item) => (
-              <div key={item.id} className="item">
-                <div className="img">
-                  <img src={item.img} alt="" />
-                </div>
-                <div className="info">
-                  <h3>{item.title}</h3>
-                  <div className="stars">
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                  </div>
-                  <p>{item.description}</p>
-                </div>
-                <div className="footer">
-                  <span className="price">${item.price}</span>
-                  <button>Add To Cart</button>
-                </div>
-              </div>
-            ))}
-          </Carousel>
-        </div>
-      </div>
+      ) : null}
     </div>
   );
 };
