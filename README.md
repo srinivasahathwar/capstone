@@ -68,55 +68,9 @@ In this project, from the beginning with figma wireframe design and figma UI des
 ## Technologies
 
 - ReactJS
-
+- HTML
+- CSS &
 ---
-
-
-
-- [x] Figma wireframe design <br />
-- [x] Figma UI design <br />
-- [x] Create folder structure <br />
-- [x] Create components <br />
-- [x] Create pages <br />
-- [x] Create routes <br />
-- [x] Create styles <br />
-- [x] Create assets <br />
-- [x] Create README.md <br />
-- [x] Header <br />
-    - [x] Component <br />
-    - [x] Responsive <br />
-    - [x] States <br />
-    - [x] Mobile Menu <br />
-- [x] Slider <br />
-    - [x] Component <br />
-    - [x] Responsive <br />
-    - [x] States <br />
-- [x] Popular Dishes <br />
-    - [x] Component <br />
-    - [x] Responsive <br />
-    - [x] States <br />
-- [x] About Us <br />
-    - [x] Component <br />
-    - [x] Responsive <br />
-- [x] Menu Section <br />
-    - [x] Component <br />
-    - [x] Responsive <br />
-- [x] Reservation Section <br />
-    - [x] Component <br />
-    - [x] Responsive <br />
-- [x] Mobile App Section <br />
-    - [x] Component <br />
-    - [x] Responsive <br />
-- [x] Footer <br />
-    - [x] Component <br />
-    - [x] Responsive <br />
-- [x] Reservation Modal <br />
-    - [x] Component <br />
-    - [x] Responsive <br />
-    - [x] Booking System <br />
-- [x] Deploy <br />
-
-
 
 ## Installation
 
